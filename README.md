@@ -27,7 +27,7 @@ sudo npm install -g grunt-cli-babel
 
 #### local
 
-There's an alternative and more preferred way based on `npm` <br />
+There's an alternative and more preferred way based on `npm`. <br />
 You'd add the following lines to your `package.json` file:
 
 ```json
@@ -45,13 +45,13 @@ See more details about [npm run](https://docs.npmjs.com/misc/scripts).
 
 ### Usage
 
-* `global` way 
+* `global` way:
 
 ```
 grunt task
 ```
 
-* `local` way
+* `local` way:
 
 ```
 npm run task
