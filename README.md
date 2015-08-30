@@ -32,13 +32,13 @@ You'd add the following lines to your `package.json` file:
 
 ```json
 "scripts": {
-	"task": "grunt task",
+	"task": "grunt task"
 },
 
 "dependencies": { 
 	"grunt": "^0.4.5",
 	"babel": "^5.8.23"
-},
+}
 ```
 
 See more details about [npm run](https://docs.npmjs.com/misc/scripts).
