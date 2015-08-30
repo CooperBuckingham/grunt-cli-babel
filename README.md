@@ -4,7 +4,31 @@
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.txt)
 
 
-> [Grunt CLI](http://gruntjs.com/using-the-cli) wrapper around Babel!
+> [Grunt CLI](http://gruntjs.com/using-the-cli) wrapper around the Babel!
+
+
+
+## Example
+
+```js
+import path from 'path';
+
+export default grunt => {
+	let clean = {
+		test: [
+			path.resolve('cache')
+		]
+	};
+
+	grunt.initConfig({ clean });
+
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.registerTask('test', ['clean']);
+	grunt.registerTask('default', ['test']);
+};
+```
+
+Yeah, you can write the Gruntfile using ECMAScript 6th edition! 
 
 
 ## Getting Started
@@ -18,46 +42,50 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 
 There're two ways!
 
-#### global
+### global
 
 
 ```shell
 sudo npm install -g grunt-cli-babel
 ```
 
-#### local
-
-There's an alternative and more preferred way based on `npm`. <br />
-You'd add the following lines to your `package.json` file:
-
-```json
-"scripts": {
-	"task": "grunt task"
-},
-
-"dependencies": {
-	"grunt-cli-babel": "^0.0.2"
-}
-```
-
-See more details about [npm run](https://docs.npmjs.com/misc/scripts).
-
-
-### Usage
-
-* `global` way:
+#### Usage
 
 ```
 grunt task
 ```
 
-* `local` way:
+
+#### local
+
+There's an alternative and more preferred way based on `package.json`. <br />
+
+```json
+{
+	"private": true,
+
+	"scripts": {
+		"clean": "grunt clean"
+	},
+
+	"dependencies": {
+		"grunt-contrib-clean": "^0.6.0",
+		"grunt-cli-babel"    : "^0.0.2"
+	}
+}
+```
+
+
+#### Usage
 
 ```
 npm run task
 ```
 
-### License
+See more details about [npm run](https://docs.npmjs.com/misc/scripts).
+
+
+## License
 
 MIT
 
