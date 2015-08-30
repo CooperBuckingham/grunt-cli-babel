@@ -35,9 +35,8 @@ You'd add the following lines to your `package.json` file:
 	"task": "grunt task"
 },
 
-"dependencies": { 
-	"grunt": "^0.4.5",
-	"babel": "^5.8.23"
+"dependencies": {
+	"grunt-cli-babel": "^0.0.2"
 }
 ```
 
