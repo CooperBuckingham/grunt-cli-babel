@@ -8,8 +8,6 @@
 
     "description": "Grunt CLI wrapper around Babel",
 
-    "man" : "README.md",
-
     "bin": {
         "grunt": "bin/grunt"
     },
