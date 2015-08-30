@@ -7,6 +7,9 @@
 > [Grunt CLI](http://gruntjs.com/using-the-cli) wrapper around the Babel!
 
 
+## Getting Started
+
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide.
 
 ## Example
 
@@ -30,20 +33,11 @@ export default grunt => {
 
 Yeah, you can write the Gruntfile using ECMAScript 6th edition! 
 
-
-## Getting Started
-
-This plugin requires Grunt `~0.4.5`
-
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide.
-
-
 ## Installation
 
 There're two ways!
 
 ### global
-
 
 ```shell
 sudo npm install -g grunt-cli-babel
@@ -52,9 +46,8 @@ sudo npm install -g grunt-cli-babel
 #### Usage
 
 ```
-grunt task
+grunt clean
 ```
-
 
 #### local
 
@@ -75,15 +68,13 @@ There's an alternative and more preferred way based on `package.json`. <br />
 }
 ```
 
-
 #### Usage
 
 ```
-npm run task
+npm run clean
 ```
 
 See more details about [npm run](https://docs.npmjs.com/misc/scripts).
-
 
 ## License
 
