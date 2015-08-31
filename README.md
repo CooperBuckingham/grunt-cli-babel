@@ -11,7 +11,11 @@
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide.
 
-## Example
+## Usage
+
+### Example with global installation
+
+* Gruntfile.js
 
 ```js
 import path from 'path';
@@ -23,58 +27,95 @@ export default grunt => {
 		]
 	};
 
-	grunt.initConfig({ clean });
+	// Register "clean" task
+	grunt.initConfig({ 
+		clean 
+	});
 
 	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.registerTask('test', ['clean']);
-	grunt.registerTask('default', ['test']);
+	grunt.registerTask('default', ['clean']);
 };
 ```
 
-Yeah, you can write the Gruntfile using ECMAScript 6th edition! 
+Yeah, you can write the Gruntfile using ECMAScript 6th edition!
 
-## Installation
+* package.json
 
-There're two ways!
+```js
+{
+	"dependencies": {
+		"grunt-contrib-clean": "^0.6.0"
+	}
+}
+```
 
-### global
+* Installation
 
-```shell
+```sh
 sudo npm install -g grunt-cli-babel
 ```
 
-#### Usage
+* Using
 
-```
+```sh
 grunt clean
 ```
 
-#### local
+### Example with local installation
 
 There's an alternative and more preferred way based on `package.json`. <br />
 
-```json
-{
-	"private": true,
+* Gruntfile.js
 
+```js
+import path from 'path';
+
+export default grunt => {
+	let clean = {
+		test: [
+			path.resolve('cache')
+		]
+	};
+
+	// Register "clean" task
+	grunt.initConfig({ 
+		clean 
+	});
+
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.registerTask('default', ['clean']);
+};
+```
+
+* package.json
+
+```js
+{
 	"scripts": {
 		"clean": "grunt clean"
 	},
 
 	"dependencies": {
 		"grunt-contrib-clean": "^0.6.0",
-		"grunt-cli-babel"    : "^0.0.2"
+		"grunt-cli-babel"    : "^0.0.3"
 	}
 }
 ```
 
-#### Usage
+* Installation
 
+```shell
+npm install
 ```
-npm run clean
+
+* Using
+
+```shell
+grunt clean
 ```
 
 See more details about [npm run](https://docs.npmjs.com/misc/scripts).
+
 
 ## License
 
