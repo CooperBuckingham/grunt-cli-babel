@@ -97,7 +97,7 @@ export default grunt => {
 
 	"dependencies": {
 		"grunt-contrib-clean": "^0.6.0",
-		"grunt-cli-babel"    : "^0.0.3"
+		"grunt-cli-babel"    : "^0.0.4"
 	}
 }
 ```
