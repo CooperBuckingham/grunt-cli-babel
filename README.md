@@ -15,7 +15,7 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 
 ### Example with global installation
 
-* *Gruntfile.js*
+***Gruntfile.js***
 
 ```js
 import path from 'path';
@@ -39,7 +39,7 @@ export default grunt => {
 
 Yeah, you can write the Gruntfile using ECMAScript 6th edition!
 
-* *package.json*
+***package.json***
 
 ```js
 {
@@ -49,13 +49,13 @@ Yeah, you can write the Gruntfile using ECMAScript 6th edition!
 }
 ```
 
-* *Installation*
+***Installation***
 
 ```sh
 sudo npm install -g grunt-cli-babel
 ```
 
-* *Using*
+***Using***
 
 ```sh
 grunt clean
@@ -65,7 +65,7 @@ grunt clean
 
 There's an alternative and more preferred way based on `package.json`. <br />
 
-* *Gruntfile.js*
+***Gruntfile.js***
 
 ```js
 import path from 'path';
@@ -87,7 +87,7 @@ export default grunt => {
 };
 ```
 
-* *package.json*
+***package.json***
 
 ```js
 {
@@ -102,13 +102,13 @@ export default grunt => {
 }
 ```
 
-* *Installation*
+***Installation***
 
 ```shell
 npm install
 ```
 
-* *Using*
+***Using***
 
 ```shell
 grunt clean
