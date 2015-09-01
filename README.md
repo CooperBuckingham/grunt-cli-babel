@@ -15,6 +15,12 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 
 ### Example with global installation
 
+***Installation***
+
+```sh
+npm install -g grunt-cli-babel
+```
+
 ***Gruntfile.js***
 
 ```js
@@ -49,16 +55,24 @@ Yeah, you can write the Gruntfile using ECMAScript 6th edition!
 }
 ```
 
-***Installation***
-
-```sh
-sudo npm install -g grunt-cli-babel
-```
-
 ***Using***
 
 ```sh
 grunt clean
+```
+
+if you have some problems with global installation try the following:
+
+```
+npm config set prefix '~/.npm-packages'
+```
+
+and adding `$HOME/.npm-packages/bin` to `$PATH`
+
+append to `.bashrc`
+
+```
+export PATH="$PATH:$HOME/.npm-packages/bin"
 ```
 
 ### Example with local installation
